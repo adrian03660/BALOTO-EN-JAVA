@@ -21,7 +21,10 @@ public class Baloto {
 	        //Para rifar el numero
         Random baloto = new Random();
         int [] n = new int [6];
-	        int [] nBaloto = new int [6];
+	int [] nBaloto = new int [6];
+	int [] nIngresado = new int [6];
+	int numrifado;
+	
     }
     
 }
