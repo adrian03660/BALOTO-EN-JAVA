@@ -19,6 +19,7 @@ public class Baloto {
         System.out.println("hola mundo");
         System.out.println("hola mundo");
         Random baloto = new Random();
+        int [] n = new int [6];
     }
     
 }
