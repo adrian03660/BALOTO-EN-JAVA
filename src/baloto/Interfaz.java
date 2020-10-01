@@ -182,14 +182,7 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         int [] n = new int [6];
-        int [] nBaloto = new int [6];
-        int [] nIngresado = new int [6];
-        int nm;
-        double granPremio=1000000000;
-        double pago1 = granPremio*(0.3);
-        double pago2 = granPremio*(0.6);
-        double pago3 = granPremio;
-        
+       
         n[0]= Integer.parseInt(bola1.getText());
         n[1]= Integer.parseInt(bola2.getText());
         n[2]= Integer.parseInt(bola3.getText());
