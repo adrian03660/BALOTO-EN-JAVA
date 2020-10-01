@@ -189,6 +189,10 @@ public class Interfaz extends javax.swing.JFrame {
         double pago1 = granPremio*(0.3);
         double pago2 = granPremio*(0.6);
         double pago3 = granPremio;
+        
+        n[0]= Integer.parseInt(bola1.getText());
+        n[1]= Integer.parseInt(bola2.getText());
+        n[2]= Integer.parseInt(bola3.getText());
     }//GEN-LAST:event_btnJugarActionPerformed
 
     /**
