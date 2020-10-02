@@ -29,6 +29,9 @@ public class Baloto {
 	     numrifado = (int) (math.random() * 45+1);
 	     nBaloto[i] = numrifado;
 	}
+	if (Ingresado[5] == nBaloto[0]){
+	
+	}
     }
     
 }
