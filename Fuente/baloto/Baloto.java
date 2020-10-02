@@ -24,8 +24,9 @@ public class Baloto {
 	double granPremio = 1.000.000.000;
 	double pago2 = granPremio*(0.6);
 	double pago3 = granPremio;
-
-	
+	for (int i =0; i<6;i++){
+		
+	}
     }
     
 }
