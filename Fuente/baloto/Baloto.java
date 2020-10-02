@@ -29,7 +29,7 @@ public class Baloto {
 	     numrifado = (int) (math.random() * 45+1);
 	     nBaloto[i] = numrifado;
 	}
-	if (Ingresado[5] == nBaloto[0]){
+	if (Ingresado[5] == nBaloto[0] && nIngresado [4] == nBaloto[1] && nIngresado[3] == nBaloto[2]){
 	
 	}
     }
