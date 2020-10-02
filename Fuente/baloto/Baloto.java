@@ -21,16 +21,25 @@ public class Baloto {
 	int [] nBaloto = new int [6];
 	int [] nIngresado = new int [6];
 	int numrifado;
+	    //Bolsa de premios
 	double granPremio = 1.000.000.000;
-	double pago2 = granPremio*(0.6);
+	    //30% por si acierta en tres numeros
+	double pago1 = granPremio*(0.3);
+	    //60% por si acierta en cinco numero
+ 	double pago2 = granPremio*(0.6);
+	    //100% por si acierta en todos
 	double pago3 = granPremio;
+	    
 	for (int i =0; i<6;i++){
 	     nIngresado[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "ingrese un numero de dos cibras:"+(i+1)));
 	     numrifado = (int) (math.random() * 45+1);
 	     nBaloto[i] = numrifado;
 	}
+	    //Si acierta en tres numeros 
 	if (Ingresado[5] == nBaloto[0] && nIngresado [4] == nBaloto[1] && nIngresado[3] == nBaloto[2]){
-	
+	    System.out.println("¡Felicidades!, Usted se ganó:"+pago1);
+	    
+		
 	}
     }
     
