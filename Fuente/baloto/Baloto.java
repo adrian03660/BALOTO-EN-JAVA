@@ -21,8 +21,10 @@ public class Baloto {
 	int [] nBaloto = new int [6];
 	int [] nIngresado = new int [6];
 	int numrifado;
-	double granPremio=1.000.000.000;
-	
+	double granPremio = 1.000.000.000;
+	double pago2 = granPremio*(0.6);
+	double pago3 = granPremio;
+
 	
     }
     
