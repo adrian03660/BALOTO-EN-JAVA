@@ -26,7 +26,8 @@ public class Baloto {
 	double pago3 = granPremio;
 	for (int i =0; i<6;i++){
 	     nIngresado[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "ingrese un numero de dos cibras:"+(i+1)));
-	     numrifado = (int) (math.random() * 45+1)
+	     numrifado = (int) (math.random() * 45+1);
+	     nBaloto[i] = numrifado;
 	}
     }
     
