@@ -36,6 +36,7 @@ public class Interfaz extends javax.swing.JFrame {
         bola5 = new javax.swing.JTextField();
         bola6 = new javax.swing.JTextField();
         btnJugar = new javax.swing.JButton();
+        mensaje = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         resbol1 = new javax.swing.JTextField();
@@ -120,18 +121,25 @@ public class Interfaz extends javax.swing.JFrame {
             }
         });
 
+        mensaje.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        mensaje.setForeground(new java.awt.Color(255, 255, 0));
+
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(71, 71, 71))
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(34, 34, 34)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnJugar)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(mensaje, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnJugar)
+                        .addContainerGap())
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(bola1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -139,12 +147,12 @@ public class Interfaz extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(bola3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(bola4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(26, 26, 26)
-                .addComponent(bola5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(bola6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(bola4, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26)
+                        .addComponent(bola5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(bola6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,7 +168,11 @@ public class Interfaz extends javax.swing.JFrame {
                     .addComponent(bola5, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bola6, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
-                .addComponent(btnJugar)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnJugar)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(mensaje, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(4, 4, 4)))
                 .addContainerGap())
         );
 
@@ -362,6 +374,7 @@ public class Interfaz extends javax.swing.JFrame {
         n[4] = Integer.parseInt(bola5.getText());
         n[5] = Integer.parseInt(bola6.getText());
 
+        
         resbol1.setText(ganador[0] + "");
         resbol2.setText(ganador[1] + "");
         resbol3.setText(ganador[2] + "");
@@ -369,7 +382,9 @@ public class Interfaz extends javax.swing.JFrame {
         resbol5.setText(ganador[4] + "");
         resbol6.setText(ganador[5] + "");
         if (n[0] >= 0 && n[0] <= 99 && n[1] >= 0 && n[1] <= 99 && n[2] >= 0 && n[2] <= 99 && n[3] >= 0 && n[3] <= 99 && n[4] >= 0 && n[4] <= 99 && n[5] >= 0 && n[5] <= 99) {
+           
             if (n[0] == ganador[0] && n[1] == ganador[1] && n[2] == ganador[2] && n[3] == ganador[3] && n[4] == ganador[4] && n[5] == ganador[5]) {
+                
             }
         }
 
@@ -516,6 +531,7 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JLabel mensaje;
     private javax.swing.JTextField resbol1;
     private javax.swing.JTextField resbol2;
     private javax.swing.JTextField resbol3;
