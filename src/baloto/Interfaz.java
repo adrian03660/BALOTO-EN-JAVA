@@ -324,6 +324,8 @@ public class Interfaz extends javax.swing.JFrame {
         n[1]= Integer.parseInt(bola2.getText());
         n[2]= Integer.parseInt(bola3.getText());
         n[3]= Integer.parseInt(bola4.getText());
+        n[4]= Integer.parseInt(bola5.getText());
+        n[5]= Integer.parseInt(bola6.getText());
 
     }//GEN-LAST:event_btnJugarActionPerformed
 
