@@ -1,6 +1,7 @@
 package baloto;
 
 import java.awt.Toolkit;
+import java.util.Random;
 import javax.swing.JTextField;
 
 /**
@@ -379,10 +380,13 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
+        //Clase random para numeros aleatorios
+        Random ga1 = new Random();
         int[] n = new int[6];
         int[] ganador = new int[6];
         int granPremio=300000000;
         
+        //Vector donde se almacenan los 6 numero que elige el usuario
         n[0] = Integer.parseInt(bola1.getText());
         n[1] = Integer.parseInt(bola2.getText());
         n[2] = Integer.parseInt(bola3.getText());
