@@ -384,7 +384,7 @@ public class Interfaz extends javax.swing.JFrame {
         Random Num_ganador = new Random();
         
      
-        int[] n = new int[6];
+        int[] numero_usuario = new int[6];
         
         //Vector que guarda los 6 numeros aleatorios que definiran el numero ganador
         int[] Numeroganador = new int[6];
@@ -393,12 +393,12 @@ public class Interfaz extends javax.swing.JFrame {
         int granPremio=300000000;
         
         //Vector donde se almacenan los 6 numero que elige el usuario
-        n[0] = Integer.parseInt(bola1.getText());
-        n[1] = Integer.parseInt(bola2.getText());
-        n[2] = Integer.parseInt(bola3.getText());
-        n[3] = Integer.parseInt(bola4.getText());
-        n[4] = Integer.parseInt(bola5.getText());
-        n[5] = Integer.parseInt(bola6.getText());
+        numero_usuario[0] = Integer.parseInt(bola1.getText());
+        numero_usuario[1] = Integer.parseInt(bola2.getText());
+        numero_usuario[2] = Integer.parseInt(bola3.getText());
+        numero_usuario[3] = Integer.parseInt(bola4.getText());
+        numero_usuario[4] = Integer.parseInt(bola5.getText());
+        numero_usuario[5] = Integer.parseInt(bola6.getText());
 
         
         //Codigo que imprime en la interfaz los numeros que salieron en el sorteo
@@ -409,9 +409,9 @@ public class Interfaz extends javax.swing.JFrame {
         resbol5.setText(Numeroganador[4] + "");
         resbol6.setText(Numeroganador[5] + "");
         
-        if (n[0] >= 0 && n[0] <= 99 && n[1] >= 0 && n[1] <= 99 && n[2] >= 0 && n[2] <= 99 && n[3] >= 0 && n[3] <= 99 && n[4] >= 0 && n[4] <= 99 && n[5] >= 0 && n[5] <= 99) {
+        if (numero_usuario[0] >= 0 && numero_usuario[0] <= 99 && numero_usuario[1] >= 0 && numero_usuario[1] <= 99 && numero_usuario[2] >= 0 && numero_usuario[2] <= 99 && numero_usuario[3] >= 0 && numero_usuario[3] <= 99 && numero_usuario[4] >= 0 && numero_usuario[4] <= 99 && numero_usuario[5] >= 0 && numero_usuario[5] <= 99) {
             
-            if (n[0] == Numeroganador[0] && n[1] == Numeroganador[1] && n[2] == Numeroganador[2] && n[3] == Numeroganador[3] && n[4] == Numeroganador[4] && n[5] == Numeroganador[5]) {
+            if (numero_usuario[0] == Numeroganador[0] && numero_usuario[1] == Numeroganador[1] && numero_usuario[2] == Numeroganador[2] && numero_usuario[3] == Numeroganador[3] && numero_usuario[4] == Numeroganador[4] && numero_usuario[5] == Numeroganador[5]) {
                 premio.setText("Felicidades, usted ganó: $"+granPremio);
             }
 
