@@ -1,7 +1,9 @@
 package baloto;
 
+import java.awt.Toolkit;
 import java.util.Random;
 import javax.swing.JOptionPane;
+import javax.swing.JTextField;
 
 /**
  *
@@ -64,16 +66,51 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel1.setText("Digita los numeros de su billete:");
 
         bola1.setBackground(new java.awt.Color(255, 255, 0));
+        bola1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bola1ActionPerformed(evt);
+            }
+        });
+        bola1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                bola1KeyTyped(evt);
+            }
+        });
 
         bola2.setBackground(new java.awt.Color(255, 255, 0));
+        bola2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                bola2KeyTyped(evt);
+            }
+        });
 
         bola3.setBackground(new java.awt.Color(255, 255, 0));
+        bola3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                bola3KeyTyped(evt);
+            }
+        });
 
         bola4.setBackground(new java.awt.Color(255, 255, 0));
+        bola4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                bola4KeyTyped(evt);
+            }
+        });
 
         bola5.setBackground(new java.awt.Color(255, 255, 0));
+        bola5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                bola5KeyTyped(evt);
+            }
+        });
 
         bola6.setBackground(new java.awt.Color(255, 0, 0));
+        bola6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                bola6KeyTyped(evt);
+            }
+        });
 
         btnJugar.setBackground(new java.awt.Color(255, 51, 0));
         btnJugar.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
@@ -354,6 +391,70 @@ public class Interfaz extends javax.swing.JFrame {
     private void resbol6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resbol6ActionPerformed
         resbol6.getText();
     }//GEN-LAST:event_resbol6ActionPerformed
+
+    private void bola1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bola1ActionPerformed
+        
+    }//GEN-LAST:event_bola1ActionPerformed
+
+    private void bola1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bola1KeyTyped
+        char tecla = evt.getKeyChar();
+        JTextField campo = (JTextField) evt.getSource();
+
+        if (!Character.isDigit(tecla)) {
+            evt.consume();
+            Toolkit.getDefaultToolkit().beep();
+        }
+    }//GEN-LAST:event_bola1KeyTyped
+
+    private void bola2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bola2KeyTyped
+        char tecla = evt.getKeyChar();
+        JTextField campo = (JTextField) evt.getSource();
+
+        if (!Character.isDigit(tecla)) {
+            evt.consume();
+            Toolkit.getDefaultToolkit().beep();
+        }
+    }//GEN-LAST:event_bola2KeyTyped
+
+    private void bola3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bola3KeyTyped
+        char tecla = evt.getKeyChar();
+        JTextField campo = (JTextField) evt.getSource();
+
+        if (!Character.isDigit(tecla)) {
+            evt.consume();
+            Toolkit.getDefaultToolkit().beep();
+        }
+    }//GEN-LAST:event_bola3KeyTyped
+
+    private void bola4KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bola4KeyTyped
+        char tecla = evt.getKeyChar();
+        JTextField campo = (JTextField) evt.getSource();
+
+        if (!Character.isDigit(tecla)) {
+            evt.consume();
+            Toolkit.getDefaultToolkit().beep();
+        }
+    }//GEN-LAST:event_bola4KeyTyped
+
+    private void bola5KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bola5KeyTyped
+        char tecla = evt.getKeyChar();
+        JTextField campo = (JTextField) evt.getSource();
+
+        if (!Character.isDigit(tecla)) {
+            evt.consume();
+            Toolkit.getDefaultToolkit().beep();
+        }
+    }//GEN-LAST:event_bola5KeyTyped
+
+    private void bola6KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bola6KeyTyped
+        char tecla = evt.getKeyChar();
+        JTextField campo = (JTextField) evt.getSource();
+
+        if (!Character.isDigit(tecla)) {
+            evt.consume();
+            Toolkit.getDefaultToolkit().beep();
+        }
+    }//GEN-LAST:event_bola6KeyTyped
 
     /**
      * @param args the command line arguments

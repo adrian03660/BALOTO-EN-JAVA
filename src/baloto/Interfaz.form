@@ -180,6 +180,10 @@
                   <Color blue="0" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="bola1ActionPerformed"/>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="bola1KeyTyped"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="bola2">
               <Properties>
@@ -187,6 +191,9 @@
                   <Color blue="0" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="bola2KeyTyped"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="bola3">
               <Properties>
@@ -194,6 +201,9 @@
                   <Color blue="0" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="bola3KeyTyped"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="bola4">
               <Properties>
@@ -201,6 +211,9 @@
                   <Color blue="0" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="bola4KeyTyped"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="bola5">
               <Properties>
@@ -208,6 +221,9 @@
                   <Color blue="0" green="ff" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="bola5KeyTyped"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="bola6">
               <Properties>
@@ -215,6 +231,9 @@
                   <Color blue="0" green="0" red="ff" type="rgb"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="bola6KeyTyped"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JButton" name="btnJugar">
               <Properties>
