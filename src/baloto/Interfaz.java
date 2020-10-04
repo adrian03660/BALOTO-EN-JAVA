@@ -90,7 +90,7 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(49, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(71, 71, 71))
             .addGroup(jPanel3Layout.createSequentialGroup()
@@ -199,7 +199,7 @@ public class Interfaz extends javax.swing.JFrame {
                 .addComponent(resbol5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(resbol6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -265,17 +265,19 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap(82, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(66, Short.MAX_VALUE))
+                        .addGap(28, 28, 28)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                        .addGap(74, 74, 74)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -315,60 +317,8 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
+       int [] n = new int [6];
        
-        //Vector que almacena los numero que ingresa el usuario
-        int [] n = new int [5];
-        
-        //Vector que guarda los numero ganadores
-        int [] ganador = new int[5];
-       
-        //Asignamos una posicion del vector n, para que guarde los numero que ingreso el usuario
-        //En la interfaz
-        n[0]= Integer.parseInt(bola1.getText());
-        n[1]= Integer.parseInt(bola2.getText());
-        n[2]= Integer.parseInt(bola3.getText());
-        n[3]= Integer.parseInt(bola4.getText());
-        n[4]= Integer.parseInt(bola5.getText());
-        n[5]= Integer.parseInt(bola6.getText());
-        
-        //Codigo que le informa al usuario de que el sorteo inicio
-        JOptionPane.showMessageDialog(null, "INICIO DE SORTEO, MUCHA SUERTE!!");
-        
-        //El siguiente comentario es un codigo que se puede utilizar oara probar de que los numero se esten guardando
-        //System.out.println("las 2 primeras cifras son :"+bola1.getText()+bola2.getText());
-        //System.out.println("las  cifras del medio son :"+bola3.getText()+bola4.getText());
-        //System.out.println("las 2 ultimas cifras son :"+bola5.getText()+bola6.getText());
-        
-        //Codigo que le muestra al usuario que numero jugo
-        JOptionPane.showMessageDialog(null,"El numero que usted jugo es :"+bola1.getText()+bola2.getText()+bola3.getText()+bola4.getText()+bola5.getText()+bola6.getText());
-        
-      //En las siguientes lineas de codigo encontraremos los numeros aleatorios
-      //Encargados de generar los numeros aleatorios
-      
-      //Creamos un objeto de tipo Ramdom por cada numero que vamos a generar
-      //En este caso serian 6
-      Random ga1 = new Random();
-      Random ga2 = new Random();
-      Random ga3 = new Random();
-      Random ga4 = new Random();
-      Random ga5 = new Random();
-      Random ga6 = new Random();
-      
-      
-      //Creamos unas variables, las cuales le pasaremos el nombre del objeto random
-      //Es decir la variable gan1 tiene el objeto ga1 y asi sucesivamente
-      int gan1 = ga1.nextInt(9);
-      int gan2 = ga2.nextInt(9);
-      int gan3 = ga3.nextInt(9);
-      int gan4 = ga4.nextInt(9);
-      int gan5 = ga5.nextInt(9);
-      int gan6 = ga6.nextInt(9);
-      
-      
-      //Imprimimos para probar de que se estan generando los numeros aleatorios
-        System.out.println("El numero ganador es : "+gan1+gan2+gan3+gan4+gan5+gan6);
-        System.out.println("-----------------------------------------------------");
-        if(n[0]==ganador[0] && n[1]==ganador[1]){}
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void resbol1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resbol1ActionPerformed
