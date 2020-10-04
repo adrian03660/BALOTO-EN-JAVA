@@ -56,6 +56,8 @@ public class Interfaz extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
 
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel1.setText("Digita los numeros de su billete:");
 
