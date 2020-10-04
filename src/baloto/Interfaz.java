@@ -395,6 +395,7 @@ public class Interfaz extends javax.swing.JFrame {
         n[5] = Integer.parseInt(bola6.getText());
 
         
+        //Codigo que imprime en la interfaz los numeros que salieron en el sorteo
         resbol1.setText(ganador[0] + "");
         resbol2.setText(ganador[1] + "");
         resbol3.setText(ganador[2] + "");
