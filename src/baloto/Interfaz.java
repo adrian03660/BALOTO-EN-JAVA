@@ -59,15 +59,17 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel1.setText("Digita los numeros de su loteria:");
 
-        bola1.setBackground(new java.awt.Color(255, 255, 51));
+        bola1.setBackground(new java.awt.Color(255, 255, 0));
 
-        bola2.setBackground(new java.awt.Color(255, 255, 51));
+        bola2.setBackground(new java.awt.Color(255, 255, 0));
 
-        bola3.setBackground(new java.awt.Color(255, 255, 51));
+        bola3.setBackground(new java.awt.Color(255, 255, 0));
 
-        bola4.setBackground(new java.awt.Color(255, 255, 51));
+        bola4.setBackground(new java.awt.Color(255, 255, 0));
 
-        bola5.setBackground(new java.awt.Color(255, 255, 51));
+        bola5.setBackground(new java.awt.Color(255, 255, 0));
+
+        bola6.setBackground(new java.awt.Color(255, 0, 0));
 
         btnJugar.setText("JUGAR");
         btnJugar.addActionListener(new java.awt.event.ActionListener() {
@@ -124,36 +126,42 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel2.setText("El número ganador es:");
 
+        resbol1.setBackground(new java.awt.Color(255, 255, 0));
         resbol1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resbol1ActionPerformed(evt);
             }
         });
 
+        resbol2.setBackground(new java.awt.Color(255, 255, 0));
         resbol2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resbol2ActionPerformed(evt);
             }
         });
 
+        resbol3.setBackground(new java.awt.Color(255, 255, 0));
         resbol3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resbol3ActionPerformed(evt);
             }
         });
 
+        resbol4.setBackground(new java.awt.Color(255, 255, 0));
         resbol4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resbol4ActionPerformed(evt);
             }
         });
 
+        resbol5.setBackground(new java.awt.Color(255, 255, 0));
         resbol5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resbol5ActionPerformed(evt);
             }
         });
 
+        resbol6.setBackground(new java.awt.Color(255, 0, 0));
         resbol6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resbol6ActionPerformed(evt);
