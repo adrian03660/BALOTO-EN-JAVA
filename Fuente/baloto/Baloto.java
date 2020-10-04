@@ -44,7 +44,9 @@ public class Baloto {
 	}else if (nIngresado[5] == nBaloto[0] && nIngresado [4] == nBaloto[1] && nIngresado[3] == nBaloto[2] && nIngresado[2] == nBaloto[3] && nIngresado[1] == nBaloto[4]){
 	    System.out.println("¡Felicidades!, Usted se ganó:"+pago2);
   	    System.out.println("Usted acertó en cinco numeros");
-	}else if (nIngresado[5] == nBaloto[0] && nIngresado [4]== nBaloto[1] && nIngresado[3] == nBaloto[2] && nIngresado[2]== nBaloto[3] && nIngresado[1] == nBaloto[4]&& nIngresado[0]== nBaloto[5]){
+	}else if (nIngresado[5] == nBaloto[0] && nIngresado [4]== nBaloto[1] && nIngresado[3] == nBaloto[2] && 
+		  nIngresado[2] == nBaloto[3] && nIngresado[1] == nBaloto[4]&& nIngresado[0]== nBaloto[5]){
+		
 	}
     }
     
