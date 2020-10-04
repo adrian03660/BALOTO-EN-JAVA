@@ -362,6 +362,13 @@ public class Interfaz extends javax.swing.JFrame {
         n[4]= Integer.parseInt(bola5.getText());
         n[5]= Integer.parseInt(bola6.getText());
         
+        resbol1.setText(ganador[0]+"");
+        resbol2.setText(ganador[1]+"");
+        resbol3.setText(ganador[2]+"");
+        resbol4.setText(ganador[3]+"");
+        resbol5.setText(ganador[4]+"");
+        resbol6.setText(ganador[5]+"");
+        
         if(n[0]==ganador[0] && n[1]==ganador[1] && n[2]==ganador[2] && n[3]==ganador[3] && n[4]==ganador[4] && n[5]==ganador[5]){}
 
     }//GEN-LAST:event_btnJugarActionPerformed
