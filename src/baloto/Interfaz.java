@@ -71,6 +71,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         bola6.setBackground(new java.awt.Color(255, 0, 0));
 
+        btnJugar.setBackground(new java.awt.Color(255, 51, 0));
         btnJugar.setText("JUGAR");
         btnJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
