@@ -59,6 +59,16 @@ public class Interfaz extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel1.setText("Digita los numeros de su loteria:");
 
+        bola1.setBackground(new java.awt.Color(255, 255, 51));
+
+        bola2.setBackground(new java.awt.Color(255, 255, 51));
+
+        bola3.setBackground(new java.awt.Color(255, 255, 51));
+
+        bola4.setBackground(new java.awt.Color(255, 255, 51));
+
+        bola5.setBackground(new java.awt.Color(255, 255, 51));
+
         btnJugar.setText("JUGAR");
         btnJugar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
