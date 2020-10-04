@@ -354,22 +354,24 @@ public class Interfaz extends javax.swing.JFrame {
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         int[] n = new int[6];
         int[] ganador = new int[6];
-        
-        n[0]= Integer.parseInt(bola1.getText());
-        n[1]= Integer.parseInt(bola2.getText());
-        n[2]= Integer.parseInt(bola3.getText());
-        n[3]= Integer.parseInt(bola4.getText());
-        n[4]= Integer.parseInt(bola5.getText());
-        n[5]= Integer.parseInt(bola6.getText());
-        
-        resbol1.setText(ganador[0]+"");
-        resbol2.setText(ganador[1]+"");
-        resbol3.setText(ganador[2]+"");
-        resbol4.setText(ganador[3]+"");
-        resbol5.setText(ganador[4]+"");
-        resbol6.setText(ganador[5]+"");
-        
-        if(n[0]==ganador[0] && n[1]==ganador[1] && n[2]==ganador[2] && n[3]==ganador[3] && n[4]==ganador[4] && n[5]==ganador[5]){}
+
+        n[0] = Integer.parseInt(bola1.getText());
+        n[1] = Integer.parseInt(bola2.getText());
+        n[2] = Integer.parseInt(bola3.getText());
+        n[3] = Integer.parseInt(bola4.getText());
+        n[4] = Integer.parseInt(bola5.getText());
+        n[5] = Integer.parseInt(bola6.getText());
+
+        resbol1.setText(ganador[0] + "");
+        resbol2.setText(ganador[1] + "");
+        resbol3.setText(ganador[2] + "");
+        resbol4.setText(ganador[3] + "");
+        resbol5.setText(ganador[4] + "");
+        resbol6.setText(ganador[5] + "");
+        if (n[0] >= 0 && n[0] <= 99 && n[1] >= 0 && n[1] <= 99 && n[2] >= 0 && n[2] <= 99 && n[3] >= 0 && n[3] <= 99 && n[4] >= 0 && n[4] <= 99 && n[5] >= 0 && n[5] <= 99) {
+            if (n[0] == ganador[0] && n[1] == ganador[1] && n[2] == ganador[2] && n[3] == ganador[3] && n[4] == ganador[4] && n[5] == ganador[5]) {
+            }
+        }
 
     }//GEN-LAST:event_btnJugarActionPerformed
 
@@ -398,7 +400,7 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_resbol6ActionPerformed
 
     private void bola1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bola1ActionPerformed
-        
+
     }//GEN-LAST:event_bola1ActionPerformed
 
     private void bola1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_bola1KeyTyped
