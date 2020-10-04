@@ -317,8 +317,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
-       int [] n = new int [6];
-       
+        int[] n = new int[6];
+        int[] ganador = new int[6];
+
     }//GEN-LAST:event_btnJugarActionPerformed
 
     private void resbol1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resbol1ActionPerformed
@@ -330,7 +331,7 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_resbol4ActionPerformed
 
     private void resbol2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resbol2ActionPerformed
-         resbol2.getText();
+        resbol2.getText();
     }//GEN-LAST:event_resbol2ActionPerformed
 
     private void resbol3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resbol3ActionPerformed
@@ -338,11 +339,11 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_resbol3ActionPerformed
 
     private void resbol5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resbol5ActionPerformed
-         resbol5.getText();
+        resbol5.getText();
     }//GEN-LAST:event_resbol5ActionPerformed
 
     private void resbol6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resbol6ActionPerformed
-         resbol6.getText();
+        resbol6.getText();
     }//GEN-LAST:event_resbol6ActionPerformed
 
     /**
