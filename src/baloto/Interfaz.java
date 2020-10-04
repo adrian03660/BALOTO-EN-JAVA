@@ -382,6 +382,7 @@ public class Interfaz extends javax.swing.JFrame {
         int[] n = new int[6];
         int[] ganador = new int[6];
         int granPremio=300000000;
+        double pago1 = granPremio*(0.3);
         
         n[0] = Integer.parseInt(bola1.getText());
         n[1] = Integer.parseInt(bola2.getText());
