@@ -1,8 +1,6 @@
 package baloto;
 
 import java.awt.Toolkit;
-import java.util.Random;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
 /**
