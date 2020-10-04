@@ -59,7 +59,8 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(0, 51, 153));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Digita los numeros de su billete:");
 
         bola1.setBackground(new java.awt.Color(255, 255, 0));
@@ -133,7 +134,8 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel4.setBackground(new java.awt.Color(0, 51, 153));
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("El número ganador es:");
 
         resbol1.setBackground(new java.awt.Color(255, 255, 0));
