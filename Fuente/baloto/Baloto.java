@@ -30,6 +30,7 @@ public class Baloto {
 	    //100% por si acierta en todos
 	double pago3 = granPremio;
 	    
+	    //Para ingresar los numeros que la persona desea anotar
 	for (int i =0; i<6;i++){
 	     nIngresado[i] = Integer.parseInt(JOptionPane.showInputDialog(null, "ingrese un numero de dos cibras:"+(i+1)));
 	     numrifado = (int) (math.random() * 45+1);
@@ -40,7 +41,8 @@ public class Baloto {
 	    System.out.println("¡Felicidades!, Usted se ganó:"+pago1);
 	    System.out.println("Usted acertó en tres numeros");	
 	   //Si acierta en 5 numeros 
-	}else if (nIngresado[5] == nBaloto[0] && nIngresado [4] == nBaloto[1]){
+	}else if (nIngresado[5] == nBaloto[0] && nIngresado [4] == nBaloto[1] && nIngresado[3] == nBaloto[2] && nIngresado[2] == nBaloto[3] && nIngresado[1] == nBaloto[4]){
+		
 	}
     }
     
