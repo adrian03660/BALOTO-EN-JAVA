@@ -391,6 +391,7 @@ public class Interfaz extends javax.swing.JFrame {
         
         //Variable que guarda el dinero que se le otorga al ganador
         int granPremio=300000000;
+        int pago1 = granPremio*(0.3);
         
         //Vector donde se almacenan los 6 numero que elige el usuario
         numero_usuario[0] = Integer.parseInt(bola1.getText());
