@@ -50,7 +50,7 @@ public class Baloto {
  	    System.out.println("Usted acertó en todos los numeros");
 	}else{
 	    System.err.println("Siga intentando, no acertó en ninguno de los numero");
-
     }
-    
+            System.out.println("El numero que usted digitó fue:"+nIngresado[0]+nIngresado[1]+nIngresado[2]+nIngresado[3]+nIngresado[4]+nIngresado[5]);
+
 }
