@@ -390,6 +390,7 @@ public class Interfaz extends javax.swing.JFrame {
         n[4] = Integer.parseInt(bola5.getText());
         n[5] = Integer.parseInt(bola6.getText());
 
+        
         resbol1.setText(ganador[0] + "");
         resbol2.setText(ganador[1] + "");
         resbol3.setText(ganador[2] + "");
