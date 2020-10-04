@@ -382,8 +382,12 @@ public class Interfaz extends javax.swing.JFrame {
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         //Clase random para numeros aleatorios
         Random ga1 = new Random();
+        
+     
         int[] n = new int[6];
         int[] ganador = new int[6];
+        
+        //Variable que guarda el dinero que se le otorga al ganador
         int granPremio=300000000;
         
         //Vector donde se almacenan los 6 numero que elige el usuario
