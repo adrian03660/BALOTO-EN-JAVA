@@ -319,6 +319,9 @@ public class Interfaz extends javax.swing.JFrame {
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         int[] n = new int[6];
         int[] ganador = new int[6];
+        
+        n[0]= Integer.parseInt(bola1.getText());
+        n[1]= Integer.parseInt(bola2.getText());
 
     }//GEN-LAST:event_btnJugarActionPerformed
 
