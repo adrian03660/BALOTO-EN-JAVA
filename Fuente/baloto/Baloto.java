@@ -42,7 +42,8 @@ public class Baloto {
 	    System.out.println("Usted acertó en tres numeros");	
 	   //Si acierta en 5 numeros 
 	}else if (nIngresado[5] == nBaloto[0] && nIngresado [4] == nBaloto[1] && nIngresado[3] == nBaloto[2] && nIngresado[2] == nBaloto[3] && nIngresado[1] == nBaloto[4]){
-		
+	    System.out.println("¡Felicidades!, Usted se ganó:"+pago3);
+
 	}
     }
     
