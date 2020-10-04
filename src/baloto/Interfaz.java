@@ -402,16 +402,16 @@ public class Interfaz extends javax.swing.JFrame {
 
         
         //Codigo que imprime en la interfaz los numeros que salieron en el sorteo
-        resbol1.setText(ganador[0] + "");
-        resbol2.setText(ganador[1] + "");
-        resbol3.setText(ganador[2] + "");
-        resbol4.setText(ganador[3] + "");
-        resbol5.setText(ganador[4] + "");
-        resbol6.setText(ganador[5] + "");
+        resbol1.setText(Numeroganador[0] + "");
+        resbol2.setText(Numeroganador[1] + "");
+        resbol3.setText(Numeroganador[2] + "");
+        resbol4.setText(Numeroganador[3] + "");
+        resbol5.setText(Numeroganador[4] + "");
+        resbol6.setText(Numeroganador[5] + "");
         
         if (n[0] >= 0 && n[0] <= 99 && n[1] >= 0 && n[1] <= 99 && n[2] >= 0 && n[2] <= 99 && n[3] >= 0 && n[3] <= 99 && n[4] >= 0 && n[4] <= 99 && n[5] >= 0 && n[5] <= 99) {
             
-            if (n[0] == ganador[0] && n[1] == ganador[1] && n[2] == ganador[2] && n[3] == ganador[3] && n[4] == ganador[4] && n[5] == ganador[5]) {
+            if (n[0] == Numeroganador[0] && n[1] == Numeroganador[1] && n[2] == Numeroganador[2] && n[3] == Numeroganador[3] && n[4] == Numeroganador[4] && n[5] == Numeroganador[5]) {
                 premio.setText("Felicidades, usted ganó: $"+granPremio);
             }
 
