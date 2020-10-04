@@ -381,7 +381,7 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void btnJugarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnJugarActionPerformed
         //Clase random para numeros aleatorios
-        Random ga1 = new Random();
+        Random Num_ganador = new Random();
         
      
         int[] n = new int[6];
